@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题 1</title>
+<style type="text/css">
+.style1 {
+	text-align: center;
+	font-size: xx-large;
+}
+.style2 {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<p class="style1">魔法河马</p>
+<p class="style1">安装器<a target="_blank" href="https://laoluomc.lanzouv.com/iFsb10cv0byj">下载链接</a></p>
+<p class="style1">配置文件2022-10-02</p>
+<form method="post">
+	<div class="style2">
+		<textarea name="TextArea1" style="width: 775px; height: 496px">{
+  "inbound": [
+    {
+      "localPort": 10808,
+      "protocol": "socks",
+      "udpEnabled": true,
+      "sniffingEnabled": true
+    }
+  ],
+  "logEnabled": false,
+  "loglevel": "warning",
+  "index": 0,
+  "vmess": [
+    {
+      "configVersion": 2,
+      "address": "请更换IP",
+      "port": 443,
+      "id": "2ef64dc8-ca3c-45b8-ad5f-20871452143b",
+      "alterId": 0,
+      "security": "auto",
+      "network": "ws",
+      "remarks": "Natproject 公益【新加波】",
+      "headerType": "none",
+      "requestHost": "vpn.hemasb.cf",
+      "path": "/fastssh/panda/6338f37dac042/",
+      "streamSecurity": "tls",
+      "allowInsecure": "false",
+      "configType": 1,
+      "testResult": " 5.4 M/s",
+      "subid": "",
+      "flow": "",
+      "sni": "",
+      "alpn": []
+    }
+  ],
+  "muxEnabled": false,
+  "kcpItem": {
+    "mtu": 1350,
+    "tti": 50,
+    "uplinkCapacity": 12,
+    "downlinkCapacity": 100,
+    "congestion": false,
+    "readBufferSize": 2,
+    "writeBufferSize": 2
+  },
+  "sysProxyType": 0,
+  "allowLANConn": true,
+  "enableStatistics": false,
+  "keepOlderDedupl": false,
+  "statisticsFreshRate": 2000,
+  "remoteDNS": "",
+  "defAllowInsecure": false,
+  "subItem": [],
+  "uiItem": {
+    "mainSize": "1287, 788",
+    "mainLvColWidth": {
+      "def": 30,
+      "configType": 98,
+      "remarks": 100,
+      "address": 219,
+      "port": 0,
+      "security": 0,
+      "network": 0,
+      "streamSecurity": 0,
+      "subRemarks": 101,
+      "testResult": 186
+    }
+  },
+  "domainStrategy": "IPIfNonMatch",
+  "domainMatcher": "linear",
+  "routingIndex": 2,
+  "routings": [
+    {
+      "remarks": "绕过大陆(Whitelist)",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "domain:example-example.com",
+            "domain:example-example2.com"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": null,
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "geosite:cn"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": [
+            "geoip:private",
+            "geoip:cn"
+          ],
+          "domain": null,
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": null,
+          "protocol": null,
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "locked": false,
+      "customIcon": null
+    },
+    {
+      "remarks": "黑名单(Blacklist)",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": null,
+          "protocol": [
+            "bittorrent"
+          ],
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": null,
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": [
+            "geoip:telegram"
+          ],
+          "domain": [
+            "geosite:gfw",
+            "geosite:greatfire",
+            "geosite:tld-!cn"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": null,
+          "protocol": null,
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "locked": false,
+      "customIcon": null
+    },
+    {
+      "remarks": "全局(Global)",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": "0-65535",
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": null,
+          "protocol": null,
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "locked": false,
+      "customIcon": null
+    },
+    {
+      "remarks": "locked",
+      "url": "",
+      "rules": [
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "proxy",
+          "ip": null,
+          "domain": [
+            "geosite:google"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "direct",
+          "ip": null,
+          "domain": [
+            "domain:example-example.com",
+            "domain:example-example2.com"
+          ],
+          "protocol": null,
+          "enabled": true
+        },
+        {
+          "type": null,
+          "port": null,
+          "inboundTag": null,
+          "outboundTag": "block",
+          "ip": null,
+          "domain": [
+            "geosite:category-ads-all"
+          ],
+          "protocol": null,
+          "enabled": true
+        }
+      ],
+      "enabled": true,
+      "locked": true,
+      "customIcon": null
+    }
+  ],
+  "enableRoutingAdvanced": true,
+  "coreType": 0,
+  "ignoreGeoUpdateCore": false,
+  "systemProxyExceptions": "",
+  "autoUpdateInterval": 0,
+  "constItem": {
+    "speedTestUrl": "http://cachefly.cachefly.net/10mb.test",
+    "speedPingTestUrl": "https://www.google.com/generate_204",
+    "defIEProxyExceptions": "localhost;127.*;10.*;172.16.*;172.17.*;172.18.*;172.19.*;172.20.*;172.21.*;172.22.*;172.23.*;172.24.*;172.25.*;172.26.*;172.27.*;172.28.*;172.29.*;172.30.*;172.31.*;192.168.*"
+  }
+}</textarea></div>
+</form>
+
+</body>
+
+</html>
